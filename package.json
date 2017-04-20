@@ -1,0 +1,92 @@
+{
+  "name": "preact-glam",
+  "amdName": "preactGlam",
+  "version": "0.0.0",
+  "description": "A tiny glamorous implementation for preact",
+  "jsnext:main": "dist/preact-glam.es.js",
+  "module": "dist/preact-glam.es.js",
+  "main": "dist/preact-glam.cjs.js",
+  "umd:main": "dist/preact-glam.umd.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "bump": "standard-version",
+    "testonly": "jest --coverage",
+    "lint": "standard",
+    "test": "npm run lint && npm run testonly",
+    "build": "npm-run-all test clean rollup rollup:min size",
+    "clean": "rimraf dist",
+    "rollup": "rollup -c",
+    "rollup:min": "cross-env MINIFY=minify rollup -c",
+    "size": "echo \"Gzipped Size: $(cat dist/preact-glam.umd.min.js | gzip-size)\"",
+    "release": "npm run build && npm run bump && git push --follow-tags origin master && npm publish"
+  },
+  "repository": "vesparny/preact-glam",
+  "keywords": [
+    "preact",
+    "glamor",
+    "glamorous",
+    "glam",
+    "css",
+    "style"
+  ],
+  "homepage": "https://github.com/vesparny/preact-glam",
+  "authors": [
+    "Alessandro Arnodo <alessandro@arnodo.net>"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src",
+    "test"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "glamor": "^2.20.24",
+    "gzip-size-cli": "^2.0.0",
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "lint-staged": "^3.4.0",
+    "npm-run-all": "^4.0.2",
+    "preact": "^8.1.0",
+    "prettier": "^1.2.2",
+    "rimraf": "^2.5.2",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "standard": "^10.0.2",
+    "standard-version": "^4.0.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.4.0"
+  },
+  "peerDependencies": {
+    "glamor": "^2.20.24",
+    "preact": "^8.1.0"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "jest",
+      "expect",
+      "it",
+      "test",
+      "describe"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --semi false",
+      "standard --fix",
+      "git add"
+    ]
+  }
+}
