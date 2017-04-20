@@ -9,6 +9,12 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![MIT License](https://img.shields.io/npm/l/preact-glam.svg?style=flat-square)](https://github.com/vesparny/preact-glam/blob/master/LICENSE)
 
+The current size of `preact-glam/dist/preact-glam.umd.min.js` is: [![tiny size][tiny-size-badge]][unpkg-dist]
+[![tiny gzip size](http://img.badgesize.io/https://unpkg.com/preact-glam/dist/preact-glam.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/preact-glam/dist/)
+
+> IMPORTANT NOTE ABOUT SIZE: Because `preact-glam` depends on `glamor`, you should consider the full size you'll be adding
+> to your application if you don't already have `glamor`.
+
 ## Install
 
 This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
@@ -37,13 +43,14 @@ You can find the library on `window.preactGlam`.
 
 ## Usage
 
-Please refer to [glamorous-tiny](https://github.com/paypal/glamorous#size)
+Please refer to [glamorous-tiny](https://github.com/paypal/glamorous#size).
+
+It should support all the features supported by `glamorous-tiny`.
 
 ## Tests
 
 ```sh
 $ yarn run test
 ```
-
 
 [MIT License](LICENSE.md) © [Alessandro Arnodo](https://alessandro.arnodo.net/)
