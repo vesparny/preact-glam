@@ -1,5 +1,4 @@
 # preact-glam
-
 > A tiny glamorous implementation for preact
 
 [![Travis](https://img.shields.io/travis/vesparny/preact-glam.svg)](https://travis-ci.org/vesparny/preact-glam)
@@ -9,8 +8,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![MIT License](https://img.shields.io/npm/l/preact-glam.svg?style=flat-square)](https://github.com/vesparny/preact-glam/blob/master/LICENSE)
 
-The current size of `preact-glam/dist/preact-glam.umd.min.js` is: [![tiny size][tiny-size-badge]][unpkg-dist]
-[![tiny gzip size](http://img.badgesize.io/https://unpkg.com/preact-glam/dist/preact-glam.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/preact-glam/dist/)
+The current size of `preact-glam/dist/preact-glam.umd.min.js` is:[![gzip size](http://img.badgesize.io/https://unpkg.com/preact-glam/dist/preact-glam.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/preact-glam/dist/)
 
 > IMPORTANT NOTE ABOUT SIZE: Because `preact-glam` depends on `glamor`, you should consider the full size you'll be adding
 > to your application if you don't already have `glamor`.
