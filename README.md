@@ -9,6 +9,7 @@
 [![MIT License](https://img.shields.io/npm/l/preact-glam.svg?style=flat-square)](https://github.com/vesparny/preact-glam/blob/master/LICENSE)
 
 The current size of `preact-glam/dist/preact-glam.umd.min.js` is:
+
 [![gzip size](http://img.badgesize.io/https://unpkg.com/preact-glam/dist/preact-glam.umd.min.js?compression=gzip&label=gzip%20size&style=flat-square)](https://unpkg.com/preact-glam/dist/)
 
 > IMPORTANT NOTE ABOUT SIZE: Because `preact-glam` depends on `glamor`, you should consider the full size you'll be adding
