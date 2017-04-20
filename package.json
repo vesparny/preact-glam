@@ -1,7 +1,7 @@
 {
   "name": "preact-glam",
   "amdName": "preactGlam",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A tiny glamorous implementation for preact",
   "jsnext:main": "dist/preact-glam.es.js",
   "module": "dist/preact-glam.es.js",
