@@ -45,7 +45,7 @@ You can find the library on `window.preactGlam`.
 
 Please refer to [glamorous-tiny](https://github.com/paypal/glamorous#size).
 
-It should support all the features supported by `glamorous-tiny`.
+It should support all the features supported by `glamorous-tiny` (with the exception of theming support).
 
 ## Tests
 
