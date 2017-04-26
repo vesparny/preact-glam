@@ -41,9 +41,10 @@
   ],
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.2",
+    "babel-eslint": "^7.2.3",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
     "cross-env": "^4.0.0",
     "glamor": "^2.20.24",
     "gzip-size-cli": "^2.0.0",
@@ -56,13 +57,11 @@
     "rimraf": "^2.5.2",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-plugin-uglify": "^1.0.2",
     "standard": "^10.0.2",
     "standard-version": "^4.0.0"
   },
-  "dependencies": {
-    "babel-preset-env": "^1.4.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "glamor": "^2.20.24",
     "preact": "^8.1.0"
